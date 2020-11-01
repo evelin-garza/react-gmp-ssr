@@ -1,0 +1,47 @@
+.movies-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    flex-grow: 1;
+
+    .movies-results {
+        margin: 20px 0;
+        color: #FFF;
+        font-weight: 200;
+    }
+
+    .no-results {
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 28px;
+        font-weight: 200;
+        flex-grow: 1;
+        align-items: center;
+    }
+
+    .movies-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .message-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 10px;
+        background: #F65261;
+        margin-top: 10px;
+        color: white;
+        font-weight: 300;
+
+        .close {
+            cursor: pointer;
+            background: no-repeat;
+            border: none;
+            color: white;
+            padding: 0;
+        }
+    }
+}

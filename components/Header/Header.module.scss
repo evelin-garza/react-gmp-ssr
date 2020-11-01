@@ -1,0 +1,55 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 440px;
+
+    &::after {
+        content: "";
+        background: url("https://images4.alphacoders.com/288/288218.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.8;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .top-bar {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+
+        .btn-add-movie {
+            background: #555555;
+            color: #F65261;
+            border: 0;
+            border-radius: 6px;
+            padding: 10px 20px;
+            cursor: pointer;
+            opacity: 0.89;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 40px;
+        margin-top: 3%;
+
+        h2 {
+            color: #FFFFFF;
+            font-weight: 200;
+            font-size: 36px;
+            letter-spacing: 2px;
+            margin: 20px 0;
+        }
+    }
+}

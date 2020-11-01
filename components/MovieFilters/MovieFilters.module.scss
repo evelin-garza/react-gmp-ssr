@@ -1,0 +1,67 @@
+.movie-filters {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #555555;
+    color: #FFF;
+    font-weight: 300;
+    align-items: baseline;
+
+    .categories {
+        display: flex;
+
+        button {
+            padding: 10px 0;
+            background: none;
+            border: none;
+            color: white;
+            text-transform: uppercase;
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+
+            &:not(:first-child) {
+                margin-left: 15px;
+            }
+
+            &.active,
+            &:hover {
+                border-bottom: 2px solid #F65261;
+            }
+        }
+    }
+
+    .sorting {
+        display: flex;
+
+        p:not(.select) {
+            color: rgba(255, 255, 255, .7);
+        }
+
+        select {
+            appearance: none;
+            background: transparent;
+            border: 0;
+            color: white;
+            font-weight: 200;
+            text-transform: uppercase;
+            padding-right: 20px;
+            outline: none;
+        }
+
+        .select-sort-container {
+            margin-left: 20px;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 50%;
+                width: 0;
+                height: 0;
+                border-left: 5px solid transparent;
+                border-right: 5px solid transparent;
+                border-top: 5px solid #F65261;
+            }
+        }
+    }
+}
